@@ -1,0 +1,55 @@
+body{
+	margin: 10%;
+	font-size: 80%;
+	background: darkcyan;
+}
+
+a{
+	color: black;
+	display: inline-block;
+	font-weight: bold;
+	background-color: cadetblue;
+	width: 100px;
+	text-align: center;
+	padding: 1px;
+}
+
+
+.frame{
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	font-variant: small-caps; 	
+	margin: auto;
+	background-color: darkcyan;
+	height: 600px;
+	width: 500px;
+	background-size: cover ;
+}
+
+h2{
+	text-align: justify;
+}
+
+h1{
+	text-align: justify;
+}
+
+label{
+	display: block;
+}
+
+button{
+	display: block;
+}
+/* coloquei o link como block utilizando comando display, para conseguir modificar sua posição para centralizada.
+
+a{
+	font-size: 150%;
+	display: inline;
+	text-align: center;
+	color: darkblue;
+
+}
+text-shadow:5px 5px 10px black; 

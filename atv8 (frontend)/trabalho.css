@@ -1,0 +1,100 @@
+body {
+	background:  cadetblue;
+	font-size: 	100%;
+	margin: 5%;
+}
+
+header{
+	font-family: sans-serif;
+	background-color: darkgrey;
+	padding-bottom: 10px;
+	text-align: center;	
+	text-decoration: none;
+}
+
+.full{
+	display: inline-block;
+	height: 420px;
+	/*  width: 40%;*/
+	padding: 5px;
+	text-align: left;
+	float: right;
+	overflow: auto;
+}
+
+a{
+	color: black;
+	display: inline-block;
+	font-weight: bold;
+	background-color: cadetblue;
+	width: 100px;
+	text-align: center;
+	padding: 1px;
+}
+
+a:hover{
+	background-color: lemonchiffon;
+	color: blue;
+	border-radius: 200px; /*arredonda as bordas*/
+}
+
+a:focus{
+	background-color: blue;
+	color: lemonchiffon;
+}
+
+a:active{
+	border: 1px solid black;
+	padding: 2px;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+ol{
+	list-style-type: lower-latin;
+}
+
+li{
+	background: linear-gradient(to left, cadetblue, darkgray); /*variação da cor*/
+	margin: 10px;
+
+}
+
+
+section{
+	font-family: sans-serif;
+	margin: 1%;
+	display: block;
+	width: 30%;
+	border: solid 5px darkgrey;
+	float: none;
+	padding: 4px;
+}
+
+
+
+img{
+	width: 5%;
+	transition-property: transform;
+	transition-duration: 2s;
+
+}
+
+
+img:hover{
+	transform: scale(2) rotate(360deg);
+}
+
+
+footer{
+	font-family: sans-serif;
+	font-size: 70%;
+	clear:  both;
+	text-align: center;
+}
+
+/* nesta parte coloquei as seções mais a esquerda como display padrão (block), e na da direita coloquei como inline-block para que eu conseguissi formatá-los lado a lado. 
+
+o mais a direita coloquei para flutuar para a direita, alinhei o texto a esquerda

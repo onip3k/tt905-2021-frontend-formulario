@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="kp.css">
+</head>
+<body>
+<!--
+  <h2>Padrão REST</h2>
+  <a href="javascript:callFetchWithGet()">Get</a>
+  <a href="javascript:callFetchWithPost('Nostalghia', 'Andrei Tarkovsky', '1983')">Post</a>
+  <a href="javascript:callFetchWithPut(3, 'Nostalghia', 'Andrei Tarkovsky', '1983')">Put</a>
+  <a href="javascript:callFetchWithDelete(3)">Delete</a>
+  <p id="json"></p>
+-->
+
+<h1>Nesta página, é possível manipular um banco de dados sobre filmes, inserindo, substituindo ou deletando as obras cinematográficas através dos formulários abaixo:</h1>
+
+<hr>
+
+<a href="javascript:callFetchWithGet()">Get</a>
+
+<hr>
+
+  <h2>Formulário Post</h2>
+  <form id="postForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title">
+      <label for="director">Director:</label>
+      <input type="text" id="director" name="director">
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year">
+      <button type="submit" onclick="return submitPost()">Submit</button>
+  </form>
+
+<hr>
+
+  <h2>Formulário Put</h2>
+  <form id="putForm">
+    <label>ID:<br>
+        <input type="text" name="id">
+    </label>
+
+    <label>Title:<br>
+        <input type="text" name="title">
+    </label>
+
+    <label>Director:<br>
+        <input type="text" name="director">
+    </label>
+
+    <label>Year:<br>
+        <input type="text" name="year">
+    </label>
+
+    <button type="submit" onclick="return submitPut()">Submit</button>
+  </form>
+
+<hr>
+
+  <h2>Formulário Delete</h2>
+  <form id="deleteForm">
+    <label>ID:<br>
+        <input type="text" name="id">
+    </label>
+
+    <button type="submit" onclick="return submitDelete()">Submit</button>
+  </form>
+
+</body>
+</html>
+
+<hr>
